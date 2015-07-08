@@ -1,0 +1,571 @@
+<body class="device-desktop pg-video-view">
+
+            <div class="header opaque">
+<div class="container navbar navbar-inverse" role="navigation">
+
+    <div class="navbar-header dropdown">
+        <button type="button" class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggle-search visible-phone"
+                onclick="$('.js-search').toggle();$('.js-search input').focus()">
+            <i class="fa fa-search"></i>
+        </button>
+        <a href="/" class="logo navbar-brand">
+            <img class="logo-black" alt="vidme"
+                 src="https://d2ha22j8ys3e0o.cloudfront.net/images/logo.png?598-1-9-5" />
+            <img class="logo-white" alt="vidme"
+                 src="https://d2ha22j8ys3e0o.cloudfront.net/images/logo_white.png?598-1-9-5" />
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="dropdown-menu pull-left">
+            <li>
+                <a href="/">Frontpage</a>
+            </li>
+            <li>
+                <a href="/featured">Featured</a>
+            </li>
+                            <li class="divider"></li>
+                                <li>
+                    <a href="https://vid.me/n/animation">Animation</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/aww">Aww</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/funny">Funny</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/gaming">Gaming</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/gifdub">Gifdub</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/mildlyinteresting">Mildly Interesting</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/nba">NBA</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/slowmo">SlowMo</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/woahdude">Woah Dude</a>
+                </li>
+                                <li>
+                    <a href="https://vid.me/n/wtf">WTF</a>
+                </li>
+                            <li class="suggest">
+                <a href="/feedback">Suggest a network</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="/about">About Vidme</a>
+            </li>
+            <li>
+                <a href="/apps">Apps</a>
+            </li>
+            <li>
+                <a href="http://vidmeblog.tumblr.com" target="_blank">Blog</a>
+            </li>
+            <li>
+                <a href="https://docs.vid.me" target="_blank">API docs</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="search js-search">
+        <i class="fa fa-search" onClick="$('.js-search-input').show();"></i>
+        <input type="text" class="js-search-input" placeholder="search" />
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="menu nav navbar-nav">
+            <li>
+                <a href="/explore">Explore</a>
+            </li>
+            <li>
+                <a href="/about">What's this?</a>
+            </li>
+            <li>
+                <a href="/feedback">Feedback</a>
+            </li>
+            <li class="menu-random hidden-phone">
+                <a href="/random">
+                    Random
+                </a>
+            </li>
+                                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a href="https://vid.me/tylerruby">My videos</a>
+                </li>
+                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a href="/settings">Settings</a>
+                </li>
+                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a class="sign-out-link" href="/sign-out">Logout (tylerruby)</a>
+                </li>
+                <li class="dropdown hidden-phone">
+                    <a href="https://vid.me/tylerruby"
+                       class="avatar-link"><span class="notify-badge-anchor"><img src="https://d1wst0behutosd.cloudfront.net/avatars/4171496.square.jpg?v4r1436330556"
+                                   alt="" class="header-avatar"><span class="label label-notifications hide"></span></span><span class="menu-username">tylerruby</span>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="https://vid.me/tylerruby">My videos</a>
+                        </li>
+                        <li>
+                                                            <a href="https://vid.me/tylerruby/albums">My albums</a>
+                        </li>
+                        <li>
+                            <a href="/notifications"><span>Notifications</span><span class="label label-notifications hide"></span></a>
+                        </li>
+                        <li>
+                            <a href="/settings">Settings</a>
+                        </li>
+                        <li>
+                            <a class="sign-out-link" href="/sign-out">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                            <li class="menu-upload">
+                <a class="menu-upload-button js-uploader-link">Upload</a>
+                                        <a class="menu-upload-more" data-toggle="dropdown"><i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a class="js-album-create">Create album</a>
+                        </li>
+                    </ul>
+                                </li>
+        </ul>
+    </div>
+</div>
+</div>
+    
+                            <div class="row-fluid main">
+            <div class="container">
+                <div class="content_wrapper">
+                    <div class="content">
+                        
+
+
+<div id="video_view">
+
+<noscript>
+<style type="text/css">
+    /* make sure the loading class doesn't hide the video */
+    #video_view #video_player.loading {
+        opacity: 1;
+    }
+</style>
+<div class="alert alert-warning">
+    <p>
+        Please enable Javascript to play this video properly. If you're using 
+        NoScript, please whitelist these domains:
+        <!--/p>
+        <p-->
+        <code>vid.me</code>,
+        <code>viddme.blob.core.windows.net</code>,
+        <code>d3d22t4ev2lc8b.cloudfront.net</code>, and
+        <code>d1kjvq24a07es4.cloudfront.net</code>
+    </p>
+    <p>
+        If you're viewing this inside an app with Javascript disabled, follow 
+        this link to watch the video:
+        <a href="https://vid.me/YDMq">https://vid.me/YDMq</a>
+    </p>
+</div>
+<br />
+</noscript>
+
+<div class="inner">
+
+                                    <div class="player">
+                                            
+            <video id="video_player" class="video-js vjs-default-skin loading" height="auto" width="100%" controls preload="auto" poster="https://d1wst0behutosd.cloudfront.net/thumbnails/1996414.jpg?v1r1431234361" data-video="1996414" data-duration="74.19" data-gif="false" data-width="640" data-height="368" data-version="6" data-video-url="https://vid.me/YDMq" data-video-title="UB40 - Can&#039;t Help Falling In Love [90s Hype ReDrum Video Edit]" data-video-thumb="https://d1wst0behutosd.cloudfront.net/thumbnails/1996414.jpg?v1r1431234361" data-video-storyboard="" data-watching-count="1" data-view-count="60" data-nsfw="0" data-moderated="1" data-next-video-thumbnail="https://d1wst0behutosd.cloudfront.net/thumbnails/3120587.jpg?v1r1435876741" data-next-video-title="Jesus can&#039;t Dive :(" data-next-video-url="https://vid.me/gvAb" data-next-video-width="480" data-next-video-height="444" data-next-video-id="3120587"><source src="https://d1wst0behutosd.cloudfront.net/videos/1996414.mp4?Expires=1436348021&amp;Signature=H4ehwa2b0jQU30Qq4BsRGNgJy2HH2puykiKqt8eW-pNv9t312jOXydM7szNKE-j9J8u6Fno-9u2LP7-Y8eEl27mxmDI6IDu4se66LKz3uamPa8sAvpgDJPepMM24b~QbU3io1cQ2PTF86rCRkVzT1O9uhgJRB2B4U5Cfkz0LVA~77v71fS3H6bCAVBhYvJdBKtm5xhLAcouW8YDN7rHQMcb3CSGRkQN~REeSfoK9aVsDnJZtOcvlNF-357t4ceEgWDd~ZoCOA1N~sSN1K5IkvcPgXyogydKdgcy9k~214LlAzd-fBp~H9UOtJqrCLDPUe3UW1BzcYWd4pVRorr5Jlw__&amp;Key-Pair-Id=APKAJJ6WELAPEP47UKWQ" type="video/mp4" data-res="480p" data-default="true"></source></video>            </div>
+
+            
+    <div class="video_info">
+
+        <div class='video_share'>
+            <ul>
+                <li>
+                    <a class="sharing reddit js-share-reddit" href="http://www.reddit.com/submit?url=https%3A%2F%2Fvid.me%2FYDMq&title=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D" target="_blank"></a>                    </li>
+                <li>
+                    <a class="sharing facebook js-share-facebook" href="https://www.facebook.com/dialog/feed?app_id=500311450085524&amp;display=page&amp;name=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D&amp;caption=https%3A%2F%2Fvid.me%2FYDMq&amp;description=www.actimix.net&amp;link=https%3A%2F%2Fvid.me%2FYDMq&amp;redirect_uri=https%3A%2F%2Fvid.me%2FYDMq%23close&amp;source=https%3A%2F%2Fd2ha22j8ys3e0o.cloudfront.net%2Fvmplayer%2Fplayer.swf%3Fvideo_id%3D1996414%26domain%3Dvid.me%26c%3D598-1-9-5&amp;picture=https%3A%2F%2Fd1wst0behutosd.cloudfront.net%2Fthumbnails%2F1996414.jpg%3Fv1r1431234361"></a>                    </li>
+                <li>
+                    <a class="sharing twitter js-share-twitter" href="https://twitter.com/intent/tweet?text=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D%20https%3A%2F%2Fvid.me%2FYDMq" target="_blank"></a>                    </li>
+                <li>
+                    <a class="sharing tumblr js-share-tumblr" href="http://www.tumblr.com/share/link?url=https%3A%2F%2Fvid.me%2FYDMq&name=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D&description=Check+out+this+video+on+vidme%21" title="Share on Tumblr" target="_blank"></a>                    </li>
+                <li>
+                    <a class="sharing stumbleupon js-share-stumbleupon" href="http://www.stumbleupon.com/submit?url=https%3A%2F%2Fvid.me%2FYDMq&title=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D" title="Share on Tumblr" target="_blank"></a>                    </li>
+            </ul>
+        </div>
+
+        
+        <div class="video_info2">
+                                <h1 class="video_title">
+                    UB40 - Can&#039;t Help Falling In Love [90s Hype ReDrum Video Edit]                    </h1>
+                                                <div class="video_author_wrapper">
+                                                                            <span class="video_author">
+                            <a href="https://vid.me/Actimix"><img class="video_author_photo" src="https://d1wst0behutosd.cloudfront.net/avatars/431378.square.jpg?v3r1422197569" alt=""><span class="video_author_username">Actimix</span></a>
+                        </span>
+                                                                                        <span class="video_follow video_actions_follow">
+                                <a class="btn btn-sm btn-default js-user-follow"
+                                   data-action="user/follow"
+                                   data-user-id="431378"
+                                   data-username="Actimix"
+                                   data-follower-count="18">
+                                                                                Follow
+                                                                        </a>
+                            </span>
+                                                                    </div>
+                                                <div class="video_description auto-link auto-tag auto-mention">www.actimix.net</div>
+            
+            <ul class="video_info3">
+                                                        <li class="score js-video-vote-score" 
+                    style="display: inline-block"
+                    data-video="1996414"
+                    data-score="1">
+                                                    <span>
+                            <span class="num">1</span>
+                                                            <span class="text">point</span>
+                        </span>
+                                        </li>
+                <li class="video_views">
+                    61                        plays
+                </li>
+                <li class="video_watching js-video-watchers" data-type="video"
+                    data-video="1996414">
+                    1 watching
+                </li>
+                <li class="video_platform">
+                    <time class="timestamp" title="May 9th, 2015, 10:04:54 pm PDT" datetime="2015-05-09T22:04:54-07:00" data-timestamp="Sat, 9 May 2015 22:04:54 -0700">8w ago</time> 
+                    <span class="video_via">
+                        via <a href="https://vid.me" target="_blank">vid.me</a>                        </span>
+                </li>
+                                </ul>
+        </div>
+
+                        <ul class="video_actions">
+                                        <li class='video_actions_like'>
+                                                    <a class="action  js-video-vote-up"
+                           data-video="1996414"
+                           data-video-title="UB40 - Can&#039;t Help Falling In Love [90s Hype ReDrum Video Edit]"
+                           data-video-url="https://vid.me/YDMq"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Upvote"><i class="fa fa-arrow-up"></i></a>
+                        <a class="action  js-video-vote-down"
+                           data-video="1996414"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Downvote"><i class="fa fa-arrow-down"></i></a>
+                    </li><li class="video_actions_sharebutton">
+                        <a href="javascript:void(0)" class="action js-embed-share"
+                           data-url="YDMq"
+                           data-width="640"
+                           data-height="368"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Share video"><i class="fa fa-share-alt"></i></a>
+                    </li><li class="video_actions_embed">
+                        <a href="javascript:void(0)" class="action js-embed-video-link"
+                           data-url="YDMq"
+                           data-width="640"
+                           data-height="368"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Embed video"><i class="fa fa-code"></i></a>
+                    </li><li class="video_actions_clip hidden-phone">
+                        <a class="action" data-video="1996414"
+                           href="/clip?video=1996414"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Make a clip">
+                            <i class="fa fa-scissors"></i>
+                        </a>
+                    </li><li class="video_actions_report">
+                        <a class="action js-video-report" data-video="1996414"
+                           data-flagged="0"
+                           data-toggle="tooltip"
+                           data-placement="bottom"
+                           title="Report video">
+                            <i class="fa fa-flag"></i>
+                        </a>
+                    </li><li class='video_actions_more dropdown'>
+                    <a class="action" data-toggle="dropdown"
+                       data-toggle="tooltip"
+                       data-placement="bottom"
+                       title="More options"><i class="fa fa-ellipsis-h"></i></a>
+                    <ul class="dropdown-menu pull-left">
+                        <li class="hidden-phone">
+                            <a class="js-video-copy-link"
+                               data-clipboard-text="https://vid.me/YDMq">
+                                Copy link
+                            </a>
+                        </li>
+                                                        <li>
+                                <a target="_blank" class="js-download-video-link" 
+                                   data-href="https://d1wst0behutosd.cloudfront.net/videos/1996414.mp4?response-content-disposition=attachment%3Bfilename%3D%22UB40CantHelpFallingInLove90sHypeReDrumVideoEdit.mp4%22&amp;response-content-type=video%2Fmp4&amp;Expires=1436348021&amp;Signature=grOcITw~R~ZL2DoF2xBw-kkA~fKfGbPezrZNbJRo2K0ASUm~qj49fFgEH942yiAGGgEEUs8j~fhQiLbN1ydDB2aWw3YDjWcalBuqptZFgxJbRN85CexVr~0bBfLotPUIMUOCREuBoV5xldwH9SwwW1tGrRAygdW21Z1bI5QOab3zp3GRHxiHx1LTXLO3AA3NzjRTWlwDkdGMidfQR07O~u6bEo2mTyPoXBE0o8J1rvHhS~lLcuxFk9UGVT7KC7CH7nyduGo8EsA47m4cTEDhs8sBQ5tnaPLkYCbu77SBMwvMFOwgoJpvd7AWBZPMsdVjGJ~nCW6zQFW5sE9cIFW9QA__&amp;Key-Pair-Id=APKAJJ6WELAPEP47UKWQ">
+                                    Download file
+                                </a>
+                            </li>
+                                                                                                                                    </ul>
+                </li>
+            </ul> 
+
+        
+    </div>
+
+                <div class="comments js-comments" data-video="1996414">
+                            
+<ul class="comments_list js-comments-list">
+</ul>
+            <div class="comments_inner">
+                                        <div class="comments_composer js-comment-composer">
+                        <div class="comments_composer_input">
+                            <textarea placeholder="Say something..." class="js-tagger js-mentioner"></textarea>
+                        </div>
+                        <div class="comments_composer_submit">
+                            <button class="btn btn-info js-comment-submit">
+                                Post comment
+                            </button>
+                        </div>
+                    </div>
+                                </div>
+        </div>
+    
+    
+    <div class="video_apps">
+        <div class="headline">
+            Download the Vidme app!
+        </div>
+        <a class="ios" href="https://itunes.apple.com/US/app/id774292353" target="_blank"
+           style="background-image: url('https://d2ha22j8ys3e0o.cloudfront.net/images/appstore_ios.png')"
+           data-position="footer" data-label="iphone"></a>
+        <a class="android" href="https://play.google.com/store/apps/details?id=me.vidd"  target="_blank"
+           style="background-image: url('https://d2ha22j8ys3e0o.cloudfront.net/images/appstore_android_light.png')"
+           data-position="footer" data-label="android"></a>
+    </div>
+</div> 
+
+<div class="gutter">
+
+                <div class="video_author">
+            <a href="https://vid.me/Actimix">
+                <span class="video_author_photo" 
+                      href="https://vid.me/Actimix">
+                    <img src="https://d1wst0behutosd.cloudfront.net/avatars/431378.square.jpg?v3r1422197569" alt="">
+                </span>
+                <div class="inner">
+                    <span class="video_author_username">Actimix</span>
+                    <span class="video_author_videos">
+                        <i class="fa fa-video-camera"></i>
+                        738                        </span>  
+                    <span class="video_author_followers">
+                        <i class="fa fa-user"></i>
+                        18                        </span>  
+                    <span class="video_author_views">
+                        <i class="fa fa-play-circle"></i>
+                        57,283                        </span>
+                                                                        <div class="video_actions_follow">
+                            <button class="btn btn-default js-user-follow"
+                                    data-action="user/follow"
+                                    data-user-id="431378" 
+                                    data-username="Actimix"
+                                    data-follower-count="18">
+                                                                        Follow
+                                                                </button>
+                        </div>
+                                        </div>
+            </a>
+        </div>
+    
+    <div class='video_share'>
+        <ul>
+            <li>
+                <a class="sharing facebook js-share-facebook" href="https://www.facebook.com/dialog/feed?app_id=500311450085524&amp;display=page&amp;name=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D&amp;caption=https%3A%2F%2Fvid.me%2FYDMq&amp;description=www.actimix.net&amp;link=https%3A%2F%2Fvid.me%2FYDMq&amp;redirect_uri=https%3A%2F%2Fvid.me%2FYDMq%23close&amp;source=https%3A%2F%2Fd2ha22j8ys3e0o.cloudfront.net%2Fvmplayer%2Fplayer.swf%3Fvideo_id%3D1996414%26domain%3Dvid.me%26c%3D598-1-9-5&amp;picture=https%3A%2F%2Fd1wst0behutosd.cloudfront.net%2Fthumbnails%2F1996414.jpg%3Fv1r1431234361"></a>                </li>
+            <li>
+                <a class="sharing twitter js-share-twitter" href="https://twitter.com/intent/tweet?text=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D%20https%3A%2F%2Fvid.me%2FYDMq" target="_blank"></a>                </li>
+            <li>
+                <a class="sharing tumblr js-share-tumblr" href="http://www.tumblr.com/share/link?url=https%3A%2F%2Fvid.me%2FYDMq&name=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D&description=Check+out+this+video+on+vidme%21" title="Share on Tumblr" target="_blank"></a>                </li>
+            <li>
+                <a class="sharing stumbleupon js-share-stumbleupon" href="http://www.stumbleupon.com/submit?url=https%3A%2F%2Fvid.me%2FYDMq&title=UB40+-+Can%27t+Help+Falling+In+Love+%5B90s+Hype+ReDrum+Video+Edit%5D" title="Share on Tumblr" target="_blank"></a>                </li>
+        </ul>
+        <div class="video_share_reddit">
+            <script type="text/javascript">
+                reddit_url = "https://vid.me/YDMq";
+                reddit_title = "UB40 - Can&#039;t Help Falling In Love [90s Hype ReDrum Video Edit]";
+                reddit_bordercolor = "ddd";
+            </script>
+            <script type="text/javascript" src="//www.redditstatic.com/button/button1.js"></script>
+                        </div>
+    </div>
+
+            
+                    
+                <div class="video_suggestions">
+            <div class="gutter_label">
+                More from
+                <a href="https://vid.me/Actimix">Actimix</a>
+            </div>
+            <ul>
+                                                                                    <li>
+                        <a href="https://vid.me/P8XQ"
+                           title="Suzanne Vega Ft. DNA - Toms Diner [90s ReDrum Video Edit] (99 Bpm Clean)">
+                            <div class="thumb">
+                                                                    <span class="duration">1:16</span>
+                                <img src="https://d1wst0behutosd.cloudfront.net/thumbnails/670616.jpg?v1r1421219052" alt="">
+                            </div>
+                            <div class="title">
+                                                                        Suzanne Vega Ft. DNA - Toms Diner [90s R&hellip;
+                                                                    <div class="views">
+                                    <span class="num">608</span>
+                                    plays
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://vid.me/cGOv"
+                           title="Dasoul - El No Te Da [Hype Latin Video Edit] (105 Bpm Clean)">
+                            <div class="thumb">
+                                                                    <span class="duration">1:32</span>
+                                <img src="https://d1wst0behutosd.cloudfront.net/thumbnails/664499.jpg?v1r1421165381" alt="">
+                            </div>
+                            <div class="title">
+                                                                        Dasoul - El No Te Da [Hype Latin Video &hellip;
+                                                                    <div class="views">
+                                    <span class="num">555</span>
+                                    plays
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://vid.me/MB2k"
+                           title="Maroon 5 - Sugar [Intro Outro Video Edit] 120 Bpm Clean">
+                            <div class="thumb">
+                                                                    <span class="duration">1:41</span>
+                                <img src="https://d1wst0behutosd.cloudfront.net/thumbnails/693131.jpg?v1r1421476219" alt="">
+                            </div>
+                            <div class="title">
+                                                                        Maroon 5 - Sugar [Intro Outro Video Edit&hellip;
+                                                                    <div class="views">
+                                    <span class="num">533</span>
+                                    plays
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://vid.me/GBja"
+                           title="StayZee Feat. Al&#039;Varela - Fabulous [Electronic Dance ReDrum Video Edit] 125 Bpm">
+                            <div class="thumb">
+                                                                    <span class="duration">1:24</span>
+                                <img src="https://d1wst0behutosd.cloudfront.net/thumbnails/731174.jpg?v1r1421912662" alt="">
+                            </div>
+                            <div class="title">
+                                                                        StayZee Feat. Al&#039;Varela - Fabulous [Elec&hellip;
+                                                                    <div class="views">
+                                    <span class="num">502</span>
+                                    plays
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                                                <li>
+                        <a href="https://vid.me/yZ1g"
+                           title="Scooter and Vassy - Today [Original Mix Video Edit] 128 Bpm">
+                            <div class="thumb">
+                                                                    <span class="duration">1:25</span>
+                                <img src="https://d1wst0behutosd.cloudfront.net/thumbnails/693272.jpg?v1r1421477963" alt="">
+                            </div>
+                            <div class="title">
+                                                                        Scooter and Vassy - Today [Original Mix &hellip;
+                                                                    <div class="views">
+                                    <span class="num">474</span>
+                                    plays
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                                                        </ul>
+        </div>
+    
+                <div class="video_apps">
+            <a href="https://itunes.apple.com/US/app/id774292353" target="_blank"
+               style="background-image: url('https://d2ha22j8ys3e0o.cloudfront.net/images/appstore_ios.png')"
+               data-position="gutter" data-label="iphone"></a>
+            <a href="https://play.google.com/store/apps/details?id=me.vidd"  target="_blank"
+               style="background-image: url('https://d2ha22j8ys3e0o.cloudfront.net/images/appstore_android.png')"
+               data-position="gutter" data-label="android"></a>
+        </div>
+    
+</div>
+
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+            
+<div class="footer">
+<ul class="menu_footer">
+    <li class="menu_footer_jobs">
+        <a href="/jobs">Do you code? We're hiring!</a>
+    </li>
+    <li class="menu_footer_twitter">
+        <a href="https://www.twitter.com/vidme" target="_blank">Twitter</a>
+    </li>
+    <li class="menu_footer_facebook">
+        <a href="https://www.facebook.com/vidme" target="_blank">Facebook</a>
+    </li>
+    <li class="menu_footer_reddit">
+        <a href="https://www.reddit.com/r/vidme" target="_blank">Subreddit</a>
+    </li>
+    <li class="menu_footer_docs">
+        <a href="https://docs.vid.me">API</a>
+    </li>
+    <li class="menu_footer_privacy">
+        <a href="/privacy">Privacy</a>
+    </li>
+    <li class="menu_footer_terms">
+        <a href="/terms-of-use">Terms</a>
+    </li>
+</ul>
+</div>
+            
+            
+                        <script type="text/javascript">
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-45776901-2', {
+            'cookieDomain': 'vid.me',
+            'sampleRate': 100              });
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+        </script>
+    
+            <script type="text/javascript">
+        (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+        mixpanel.init("1f56950e9710dee864f0f7308fa5233c", {
+            api_host : "https://api.mixpanel.com"
+        });
+    </script>
+
+    
+            
+            
+</body>
+
