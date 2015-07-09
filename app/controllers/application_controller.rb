@@ -1,5 +1,11 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+  def default_url_options
+    if Rails.env.production?
+      {:host => "gentle-river-1982.herokuapp.com"}
+    else  
+      {}
+    end
+  end
+
   protect_from_forgery with: :exception
 end
