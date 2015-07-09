@@ -1,6 +1,4 @@
 Rails.application.configure do
-
-  config.action_controller.default_url_options = { host: 'gentle-river-1982.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
