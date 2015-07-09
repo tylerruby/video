@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-Rails.application.routes.default_url_options[:host] = 'gentle-river-1982.herokuapp.com'
+  config.default_host = 'gentle-river-1982.herokuapp.com'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
