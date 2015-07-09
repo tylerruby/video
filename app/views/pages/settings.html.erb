@@ -1,183 +1,168 @@
-
-        
 <div class="row-fluid main">
-                <div class="container">
-                    <div class="content_wrapper">
-                        <div class="content">
-                            <div id="settings">
+  <div class="container">
+    <div class="content_wrapper">
+      <div class="content">
+        <div id="settings">
+          <h1>Settings</h1>
+          <ul class="nav tabs">
+            <li class="active">
+              <a href="settings">
+                Profile
+              </a>
+            </li>
+            <li class="">
+              <a href="settings/notifications">
+                Notifications
+              </a>
+            </li>
+            <li class="">
+              <a href="settings/social">
+                Connections
+              </a>
+            </li>
+          </ul>
 
-    <h1>
-        Settings
-    </h1>
-
+          <br/>
+          <br/>
     
-<ul class="nav tabs">
-    <li class="active">
-        <a href="settings">
-            Profile
-        </a>
-    </li>
-    <li class="">
-        <a href="settings/notifications">
-            Notifications
-        </a>
-    </li>
-    <li class="">
-        <a href="settings/social">
-            Connections
-        </a>
-    </li>
-</ul>
-
-    <br/>
-    <br/>
-    
-    
-    <div class="form-settings col-xs-12 col-sm-6 col-md-6">
-        <form role="form" method="POST" id="settings-form"
+          <div class="form-settings col-xs-12 col-sm-6 col-md-6">
+            <form role="form" method="POST" id="settings-form"
               class="js-form-settings" onsubmit="event.preventDefault()">
-            <div class="alert alert-warning in hide js-error-alert">
+              <div class="alert alert-warning in hide js-error-alert">
                 <div>
-                    <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+                  <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
                 </div>
-            </div>
-            <div class="alert alert-success in hide js-success-alert">
+              </div>
+              <div class="alert alert-success in hide js-success-alert">
                 <div>
-                    <strong>Changes saved!</strong>
+                  <strong>Changes saved!</strong>
                 </div>
-            </div>
-
-            <div class="form-group">
+              </div>
+              <div class="form-group">
                 <label for="displayName">
-                    Display name
+                  Display name
                 </label>
                 <input name="displayname" type="displayname" id="displayName" class="form-control"
                        value=""/>
-            </div>
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="displayName">
-                    Username
+                  Username
                 </label>
                 <input name="username" type="username" id="username" class="form-control"
                        value="tylerruby"/>
-            </div>
+              </div>
 
-            <div class="form-group">
+              <div class="form-group">
                 <label for="settingsInputEmail">
                     Email address
-                                            <span class="badge alert-success">verified</span>
-                                    </label>
+                  <span class="badge alert-success">verified</span>
+                </label>
                 <input name="email" type="email" class="form-control"
                        id="settingsInputEmail"
                        value="tylerruby@comcast.net">
-            </div>
-            <div class="form-group">
+              </div>
+              <div class="form-group">
                 <label for="settingsInputBio">Short bio</label>
                 <textarea class="form-control" name="bio" id="settingsInputBio"
                           rows="5"
                           placeholder="Add a short bio to your profile."
                           maxlength="300"></textarea>
-            </div>
-
-            <div class="form-group settings_links">
+              </div>
+              <div class="form-group settings_links">
                 <label>Links and profiles on the web</label>
                 <ul></ul>
                 <div class="settings_links_add">
                     <a>Add link</a>
                 </div>
-            </div>
-
-            <div class="form-group settings_allow_comments">
+              </div>
+              <div class="form-group settings_allow_comments">
                 <label>Allow comments</label>
-
                 <div class="radio">
-                    <label>
-                        <input id="disallow_comments_0" name="disallow_comments" value="0" type="radio" checked="checked">                        Anyone can comment on my videos and albums.
-                    </label>
+                  <label>
+                    <input id="disallow_comments_0" name="disallow_comments" value="0" type="radio" checked="checked">                        Anyone can comment on my videos and albums.
+                  </label>
                 </div>
                 <div class="radio">
-                    <label>
-                        <input id="disallow_comments_1" name="disallow_comments" value="1" type="radio">                        Comments are not allowed on my videos and albums.
-                    </label>
+                  <label>
+                    <input id="disallow_comments_1" name="disallow_comments" value="1" type="radio">                        Comments are not allowed on my videos and albums.
+                  </label>
                 </div>
-            </div>
-            <div class="form-group settings_allow_downloads">
+              </div>
+              <div class="form-group settings_allow_downloads">
                 <label>Allow video downloads</label>
-
                 <div class="radio">
-                    <label>
-                        <input id="disallow_downloads_0" name="disallow_downloads" value="0" type="radio" checked="checked">                        Yes, anyone can download my videos.
-                    </label>
+                  <label>
+                    <input id="disallow_downloads_0" name="disallow_downloads" value="0" type="radio" checked="checked">                        Yes, anyone can download my videos.
+                  </label>
                 </div>
                 <div class="radio">
-                    <label>
-                        <input id="disallow_downloads_1" name="disallow_downloads" value="1" type="radio">                        No, do not allow downloads.
-                    </label>
+                  <label>
+                    <input id="disallow_downloads_1" name="disallow_downloads" value="1" type="radio">                        No, do not allow downloads.
+                  </label>
                 </div>
-            </div>
-            <div class="form-group settings_search_nsfw_default">
+              </div>
+              <div class="form-group settings_search_nsfw_default">
                 <label for="search_nsfw_default">NSFW search</label>
-
                 <div class="radio">
-                    <label>
-                        <input id="search_nsfw_default_1" name="search_nsfw_default" value="1" type="radio">                        Yes, show me NSFW search results.
-                    </label>
+                  <label>
+                    <input id="search_nsfw_default_1" name="search_nsfw_default" value="1" type="radio">                        Yes, show me NSFW search results.
+                  </label>
                 </div>
                 <div class="radio">
-                    <label>
-                        <input id="search_nsfw_default_0" name="search_nsfw_default" value="0" type="radio" checked="checked">                        No, do not show NSFW search results.
-                    </label>
+                  <label>
+                    <input id="search_nsfw_default_0" name="search_nsfw_default" value="0" type="radio" checked="checked">                        No, do not show NSFW search results.
+                  </label>
                 </div>
-            </div>
-            <div class="settings_submit">
+              </div>
+              <div class="settings_submit">
                 <button type="submit" class="btn btn-success">
-                    Save changes
-                    <i class="fa fa-spinner fa-spin hide"></i>
+                  Save changes
+                  <i class="fa fa-spinner fa-spin hide"></i>
                 </button>
                 <span class="form-alternative js-user-password-link"
                       data-nopass="">
                   <a>
-                      change password
+                    change password
                   </a>
                 </span>
                 <span class="form-alternative js-user-delete-link"
                       data-nopass="">
-                    <a>delete account</a>
+                  <a>delete account</a>
                 </span>
-            </div>
-        </form>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         
                 
 <div class="footer">
-    <ul class="menu_footer">
-        <li class="menu_footer_jobs">
-            <a href="/jobs">Do you code? We're hiring!</a>
-        </li>
-        <li class="menu_footer_twitter">
-            <a href="https://www.twitter.com/vidme" target="_blank">Twitter</a>
-        </li>
-        <li class="menu_footer_facebook">
-            <a href="https://www.facebook.com/vidme" target="_blank">Facebook</a>
-        </li>
-        <li class="menu_footer_reddit">
-            <a href="https://www.reddit.com/r/vidme" target="_blank">Subreddit</a>
-        </li>
-        <li class="menu_footer_docs">
-            <a href="https://docs.vid.me">API</a>
-        </li>
-        <li class="menu_footer_privacy">
-            <a href="/privacy">Privacy</a>
-        </li>
-        <li class="menu_footer_terms">
-            <a href="/terms-of-use">Terms</a>
-        </li>
-    </ul>
+  <ul class="menu_footer">
+    <li class="menu_footer_jobs">
+      <a href="/jobs">Do you code? We're hiring!</a>
+    </li>
+    <li class="menu_footer_twitter">
+      <a href="https://www.twitter.com/vidme" target="_blank">Twitter</a>
+    </li>
+    <li class="menu_footer_facebook">
+      <a href="https://www.facebook.com/vidme" target="_blank">Facebook</a>
+    </li>
+    <li class="menu_footer_reddit">
+      <a href="https://www.reddit.com/r/vidme" target="_blank">Subreddit</a>
+    </li>
+    <li class="menu_footer_docs">
+      <a href="https://docs.vid.me">API</a>
+    </li>
+    <li class="menu_footer_privacy">
+      <a href="/privacy">Privacy</a>
+    </li>
+    <li class="menu_footer_terms">
+      <a href="/terms-of-use">Terms</a>
+    </li>
+  </ul>
 </div>
