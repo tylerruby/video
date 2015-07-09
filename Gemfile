@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rb-readline'
 gem 'devise'
+gem 'paperclip'
+gem 'paperclip-av-transcoder'
+gem 'thin'
 
 
 gem 'pg', group: :production

@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header opaque">
   <div class="container navbar navbar-inverse" role="navigation">
     <div class="navbar-header dropdown">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -88,12 +88,17 @@
           <a href="https://vid.me/tylerruby" class="avatar-link"><span class="notify-badge-anchor"><img src="https://d1wst0behutosd.cloudfront.net/avatars/4171496.square.jpg?v4r1436330556" alt="" class="header-avatar"><span class="label label-notifications hide"></span></span><span class="menu-username">tylerruby</span>
           </a>
           <ul class="dropdown-menu pull-right">
- 
+            <li>
+                <a href="https://vid.me/tylerruby">My videos</a>
+            </li>
+            <li>
+              <a href="https://vid.me/tylerruby/albums">My albums</a>
+            </li>
             <li>
                 <a href="/notifications"><span>Notifications</span><span class="label label-notifications hide"></span></a>
             </li>
             <li>
-                <%= link_to('Settings', edit_user_registration_path) %>
+                <a href="/settings">Settings</a>
             </li>
             <li>
                 <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>

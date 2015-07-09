@@ -2868,8 +2868,8 @@ body.nomenu .footer {
     color: rgba(0, 0, 0, .5)
 }
 .videos_list>li .thumb_channel {
-    background-color: #3CE8DB;
-    border: 1px solid #3CE8DB
+    background-color: #fff;
+    border: 1px solid #eee
 }
 .videos_list>li .thumb_channel a {
     color: rgba(0, 0, 0, .5)
@@ -2880,7 +2880,7 @@ body.nomenu .footer {
     border: 1px solid #FF5151
 }
 .videos_list>li .thumb_featured {
-    background-color: #eee;
+    background-color: #fff;
     border-color: #eee
 }
 .videos_list>li .thumb_featured a {

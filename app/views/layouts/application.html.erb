@@ -29,7 +29,9 @@
 
 </head>
 <body class="device-desktop pg-index">
-  <%= render 'layouts/header' %>
+  <%= content_for?(:opaque_header) ? yield(:opaque_header) : render("layouts/opaque_header") %>
+
   <%= yield %>
+  <%= render 'layouts/footer' %>
 </body>
 </html>
