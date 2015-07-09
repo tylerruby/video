@@ -3,4 +3,8 @@ class PagesController < ApplicationController
   end
   def user
   end
+  def video
+  end
+  def settings
+  end
 end

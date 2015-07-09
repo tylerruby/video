@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Pitch - Discover the hottest new startups</title>
+  <title>Pitch</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <meta charset="utf-8">
-  <meta name="description" content="Pitch is the best way to find the hottest new startups">
-  <meta name="keywords" content="Startups, startup pitches, new startups, hot startups, angel investors, invest in startups, unicorn">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   <meta name="author" content="pitch">
   <base href="http://localhost:3000/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -28,7 +28,8 @@
 
 
 </head>
-
-<%= yield %>
-
+<body class="device-desktop pg-index">
+  <%= render 'layouts/header' %>
+  <%= yield %>
+</body>
 </html>

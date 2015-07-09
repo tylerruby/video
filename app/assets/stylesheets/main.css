@@ -8,12 +8,12 @@ a {
     color: #E83C65
 }
 a:hover {
-    color: #FB254F;
+    color: #00a0f0;
     text-decoration: underline
 }
 a:active,
 a:focus {
-    color: #FB254F
+    color: #00a0f0
 }
 ::-webkit-input-placeholder {
     color: #999
@@ -245,10 +245,14 @@ body.nomenu .header {
     margin-right: 10px
 }
 .header a.logo .logo-black {
-    display: none
+    display: none;
+    height:41px;
+    width:41px;
 }
 .header a.logo .logo-white {
-    display: inline-block
+    display: inline-block;
+    height:41px;
+    width:41px;
 }
 .header a.logo:hover,
 .header a.logo:focus,
@@ -312,7 +316,7 @@ body.nomenu .header {
 .header .menu>.menu-upload>a {
     float: left;
     display: inline-block;
-    background-color: #FB254F;
+    background-color: #00a0f0;
     color: #fff;
     border-radius: 4px;
     padding: 6px .75em 4px;
@@ -322,11 +326,11 @@ body.nomenu .header {
     -moz-user-select: none
 }
 .header .menu .menu-upload>a:hover {
-    background-color: #FB254F;
+    background-color: #00a0f0;
     color: #fff
 }
 .header .menu .menu-upload>a:active {
-    border-color: #FB254F;
+    border-color: #00a0f0;
     border-bottom: none;
     margin-top: 2px
 }
@@ -1168,7 +1172,7 @@ body.nomenu .footer {
     height: 5px
 }
 #video_view .progress-bar {
-    background-color: #FB254F;
+    background-color: #00a0f0;
     box-shadow: none
 }
 #video_view .progress_wrapper .note {
@@ -1251,8 +1255,8 @@ body.nomenu .footer {
 }
 #video_view .gutter .video_author .btn {
     font-size: .9em;
-    background-color: #FB254F;
-    border: 1px solid #FB254F;
+    background-color: #00a0f0;
+    border: 1px solid #00a0f0;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     color: #fff;
     padding: 2px 7px
@@ -1263,12 +1267,12 @@ body.nomenu .footer {
 }
 #video_view .gutter .video_author .btn.following {
     background-color: transparent;
-    border-color: #FB254F;
-    color: #FB254F
+    border-color: #00a0f0;
+    color: #00a0f0
 }
 #video_view .gutter .video_author .btn.following:active {
     margin-top: 1px;
-    border-bottom: 1px solid #FB254F
+    border-bottom: 1px solid #00a0f0
 }
 #video_view .gutter .gutter_label {
     color: #aaa;
@@ -1644,7 +1648,7 @@ body.nomenu .footer {
     margin-bottom: 0;
     font-size: .9em;
     color: #fff;
-    background-color: #FB254F;
+    background-color: #00a0f0;
     border: none;
     border-radius: 5px;
     margin-left: .5em;
@@ -1653,8 +1657,8 @@ body.nomenu .footer {
 }
 #video_view .video_author_wrapper .btn.following {
     background-color: transparent;
-    border: 2px solid #FB254F;
-    color: #FB254F
+    border: 2px solid #00a0f0;
+    color: #00a0f0
 }
 #video_view .video_actions {
     padding: 5px 0 20px
@@ -2246,9 +2250,14 @@ body.nomenu .footer {
     font-weight: 400
 }
 #index .splash_bg {
-    background-color: #111;
-    background-image: url('/images/splash.gif');
-    background-repeat: repeat;
+    background-color: rgba(88,152,241,0.6);
+    background-image: -webkit-linear-gradient(-45deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+    background-image: url(http://41.media.tumblr.com/fddb3f2b0bdf390efd7ea87372e75fa5/tumblr_ndyg3pYbKW1tubinno1_1280.jpg);
+      background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
     position: absolute;
     height: 600px;
     width: 100%;
@@ -2274,7 +2283,7 @@ body.nomenu .footer {
     font-weight: 400;
     margin: 0 0 1em;
     line-height: 1.3em;
-    color: #ccc
+    color: #fff
 }
 #index .uploadbutton_wrapper {
     float: left;
@@ -2293,7 +2302,7 @@ body.nomenu .footer {
     float: left;
     display: inline-block;
     color: #fff;
-    background-color: #FB254F;
+    background-color: #00a0f0;
     height: 50px;
     text-decoration: none;
     border-bottom: 3px solid rgba(0, 0, 0, .2);
@@ -2309,7 +2318,7 @@ body.nomenu .footer {
 }
 #index .uploadbutton:active,
 #index .uploadbutton-more:active {
-    background-color: #FB254F;
+    background-color: #00a0f0;
     border-bottom: none;
     height: 48px;
     margin-top: 2px
@@ -2364,13 +2373,15 @@ body.nomenu .footer {
 }
 #index .applinks li.android a {
     background-image: url('/images/applink_android.png');
-    background-position: 10px 8px
+    background-position: 10px 8px;
+    background-color: #262626
 }
 #index .applinks li.android a:hover {
     background-image: url('/images/applink_android_black.png')
 }
 #index .applinks li.iphone a {
-    background-image: url('/images/applink_apple.png')
+    background-image: url('/images/applink_apple.png');
+    background-color: #262626
 }
 #index .applinks li.iphone a:hover {
     background-image: url('/images/applink_apple_black.png')
@@ -2548,7 +2559,7 @@ body.nomenu .footer {
     border-radius: 3px;
     font-size: .8em;
     color: #fff;
-    background-color: #FB254F;
+    background-color: #00a0f0;
     padding: .25em .5em;
     margin-top: 5px;
     text-decoration: none;
@@ -2561,8 +2572,8 @@ body.nomenu .footer {
 }
 #explore .networks .network_follow.following {
     background-color: transparent;
-    border: 1px solid #FB254F;
-    color: #FB254F
+    border: 1px solid #00a0f0;
+    color: #00a0f0
 }
 @media (max-width: 767px) {
     #explore .networks li {
@@ -2605,7 +2616,7 @@ body.nomenu .footer {
     display: none
 }
 .vjs-default-skin .vjs-play-progress {
-    background-color: #FB254F;
+    background-color: #00a0f0;
     background-image: none;
     transition: none
 }
@@ -2625,7 +2636,7 @@ body.nomenu .footer {
 }
 .vjs-default-skin .vjs-volume-level {
     background-image: none;
-    background-color: #FB254F
+    background-color: #00a0f0
 }
 .vjs-default-skin .in-twitter-card .vjs-volume-control {
     margin-right: 12px!important
@@ -3094,13 +3105,13 @@ body.nomenu .footer {
     text-shadow: none
 }
 .vjs-default-skin .vjs-hd-button:hover:before {
-    color: #FB254F
+    color: #00a0f0
 }
 .vjs-default-skin .vjs-hd-button.vjs-selected:before {
-    color: #FB254F
+    color: #00a0f0
 }
 .vjs-default-skin .vjs-hd-button.vjs-selected:hover:before {
-    color: #FB254F
+    color: #00a0f0
 }
 .users_list {
     margin-bottom: 2em;
@@ -3298,8 +3309,8 @@ body.nomenu .footer {
 #embed_watch a:hover {
     opacity: 1;
     text-decoration: none;
-    background-color: #FB254F;
-    border-color: #FB254F
+    background-color: #00a0f0;
+    border-color: #00a0f0
 }
 #embed_embed a i,
 #embed_share a i,
@@ -4145,8 +4156,8 @@ ul.about-tabs li.tab i {
     font-size: 1.1em
 }
 #user_view .user_follow .btn {
-    background-color: #FB254F;
-    border: 2px solid #FB254F;
+    background-color: #00a0f0;
+    border: 2px solid #00a0f0;
     border-bottom: 2px solid rgba(0, 0, 0, .2);
     color: #fff;
     font-size: 1.3em;
@@ -4166,8 +4177,8 @@ ul.about-tabs li.tab i {
 }
 #user_view .user_follow .btn.following {
     background-color: #fff;
-    border: 2px solid #FB254F;
-    color: #FB254F
+    border: 2px solid #00a0f0;
+    color: #00a0f0
 }
 #user_view .user_follow .btn.following:active {
     margin-top: 0
@@ -4434,18 +4445,18 @@ ul.about-tabs li.tab i {
     margin-top: 2px
 }
 #channel_view .channel_follow .btn {
-    background-color: #FB254F;
-    border: 2px solid #FB254F;
+    background-color: #00a0f0;
+    border: 2px solid #00a0f0;
     border-bottom: 2px solid rgba(0, 0, 0, .2)
 }
 #channel_view .channel_follow .btn-info {
     background-color: #fff;
-    border: 2px solid #FB254F;
-    color: #FB254F
+    border: 2px solid #00a0f0;
+    color: #00a0f0
 }
 #channel_view .channel_follow .btn-info:active {
     margin-top: 0;
-    border-bottom: 2px solid #FB254F
+    border-bottom: 2px solid #00a0f0
 }
 #channel_view .channel_post .btn {
     background-color: #3CE8DB;
@@ -4733,7 +4744,7 @@ ul.about-tabs li.tab i {
     padding: .5em 1.25em;
     width: 100%;
     max-width: 350px;
-    background-color: #FB254F;
+    background-color: #00a0f0;
     border-bottom: 2px solid rgba(0, 0, 0, .1)
 }
 #tag .tag_post .btn:active {
@@ -5980,10 +5991,10 @@ body.pg-video-embed {
     width: 10px;
     margin-left: -5px;
     background-image: none;
-    background-color: #FB254F
+    background-color: #00a0f0
 }
 #clip .slider .slider-selection {
-    background: #FB254F
+    background: #00a0f0
 }
 #video-thumbnail-editor .slider .slider-selection {
     display: none
@@ -5995,7 +6006,7 @@ body.pg-video-embed {
 }
 #clip .options .btn,
 #video-thumbnail-editor .options .btn {
-    background-color: #FB254F;
+    background-color: #00a0f0;
     color: #fff;
     font-weight: 700;
     font-size: 1.1em;

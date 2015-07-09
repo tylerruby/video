@@ -1,0 +1,119 @@
+<div class="header">
+    <div class="container navbar navbar-inverse" role="navigation">
+        <div class="navbar-header dropdown">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <button type="button" class="navbar-toggle-search visible-phone" onclick="$('.js-search').toggle();$('.js-search input').focus()">
+                <i class="fa fa-search"></i>
+            </button>
+            <a href="/" class="logo navbar-brand">
+                <img class="logo-black" alt="vidme" src="http://i.imgur.com/hROHOae.png" />
+                <img class="logo-white" alt="vidme" src="http://i.imgur.com/uJVMKJP.png" />
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu pull-left">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/featured">Featured</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="">Consumers</a>
+                </li>
+                <li>
+                    <a href="">Design</a>
+                </li>
+                <li>
+                    <a href="">Education</a>
+                </li>
+                <li>
+                    <a href="">Enterprises</a>
+                </li>
+                <li>
+                    <a href="">Finance</a>
+                </li>
+                <li>
+                    <a href="">Healthcare</a>
+                </li>
+                <li>
+                    <a href="">Media</a>
+                </li>
+                <li>
+                    <a href="">Retail</a>
+                </li>
+                <li>
+                    <a href="">Sports</a>
+                </li>
+                <li>
+                    <a href="">Travel</a>
+                </li>
+                <li class="suggest">
+                    <a href="">More</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="/about">About Pitch</a>
+                </li>
+                <li>
+                    <a href="http://vidmeblog.tumblr.com" target="_blank">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search js-search">
+            <i class="fa fa-search" onClick="$('.js-search-input').show();"></i>
+            <input type="text" class="js-search-input" placeholder="search" />
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="menu nav navbar-nav">
+                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a href="https://vid.me/tylerruby">My videos</a>
+                </li>
+                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a href="/settings">Settings</a>
+                </li>
+                <li class="visible-phone hidden-desktop hidden-tablet">
+                    <a class="sign-out-link" href="/sign-out">Logout (tylerruby)</a>
+                </li>
+                <li class="dropdown hidden-phone">
+                    <a href="https://vid.me/tylerruby" class="avatar-link"><span class="notify-badge-anchor"><img src="https://d1wst0behutosd.cloudfront.net/avatars/4171496.square.jpg?v4r1436330556"
+                                   alt="" class="header-avatar"><span class="label label-notifications hide"></span></span><span class="menu-username">tylerruby</span>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="https://vid.me/tylerruby">My videos</a>
+                        </li>
+                        <li>
+                            <a href="https://vid.me/tylerruby/albums">My albums</a>
+                        </li>
+                        <li>
+                            <a href="/notifications"><span>Notifications</span><span class="label label-notifications hide"></span></a>
+                        </li>
+                        <li>
+                            <a href="/settings">Settings</a>
+                        </li>
+                        <li>
+                            <a class="sign-out-link" href="/sign-out">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-upload">
+                    <a class="menu-upload-button js-uploader-link"><i class="fa fa-plus"></i> Startup</a>
+                    <a class="menu-upload-more" data-toggle="dropdown"><i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a class="js-album-create">Create album</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
