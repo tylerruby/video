@@ -1,0 +1,8 @@
+/* Responsive Video */
+.video-js .vjs-tech {
+height: auto !important;
+position: relative !important;
+}
+.video-panel {
+	padding: 0px !important;
+}

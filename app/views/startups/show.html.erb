@@ -1,21 +1,5 @@
-<div>
-  <%= image_tag @startup.image.url, style: "width:50px; margin-top:6px; margin-left: -10px;" %>
-</div>
-<div>
-  <%= image_tag @startup.image.url, style: "width:25px; margin-top:6px; margin-left: -10px;" %>
-</div>
-
-<div class="col-md-8 col-sm-9 col-xs-10">
-  <h4><%= @startup.name %></h4>
-  <%= @startup.description %>
-</div>
-
-<div class="panel-body video-panel">
-  <%=videojs_rails sources: { mp4: @startup.video.url, 
-   webm: @startup.video.url}, setup: "{}", controls: true,   width:"auto",height:"auto", id: "startup_video", class: "video-js vjs-default-skin vjs-big-play-centered" %>
-</div>
-
-
+<% @page_class = "video-view"  %>
+<% @header_class = "opaque" %>
 
 
 <div class="row-fluid main">
@@ -40,15 +24,15 @@
         NoScript, please whitelist these domains:
         <!--/p>
         <p-->
-        <code>vid.me</code>,
-        <code>viddme.blob.core.windows.net</code>,
-        <code>d3d22t4ev2lc8b.cloudfront.net</code>, and
-        <code>d1kjvq24a07es4.cloudfront.net</code>
+        <code></code>,
+        <code></code>,
+        <code></code>, and
+        <code></code>
     </p>
     <p>
         If you're viewing this inside an app with Javascript disabled, follow 
         this link to watch the video:
-        <a href="https://vid.me/YDMq">https://vid.me/YDMq</a>
+        <a href=""></a>
     </p>
 </div>
 <br />
@@ -56,9 +40,16 @@
 
 <div class="inner">
 
+
+  
+
+
+
+
                                     <div class="player">
                                             
-            <video id="video_player" class="video-js vjs-default-skin loading" height="auto" width="100%" controls preload="auto" poster="https://d1wst0behutosd.cloudfront.net/thumbnails/1996414.jpg?v1r1431234361" data-video="1996414" data-duration="74.19" data-gif="false" data-width="640" data-height="368" data-version="6" data-video-url="https://vid.me/YDMq" data-video-title="UB40 - Can&#039;t Help Falling In Love [90s Hype ReDrum Video Edit]" data-video-thumb="https://d1wst0behutosd.cloudfront.net/thumbnails/1996414.jpg?v1r1431234361" data-video-storyboard="" data-watching-count="1" data-view-count="60" data-nsfw="0" data-moderated="1" data-next-video-thumbnail="https://d1wst0behutosd.cloudfront.net/thumbnails/3120587.jpg?v1r1435876741" data-next-video-title="Jesus can&#039;t Dive :(" data-next-video-url="https://vid.me/gvAb" data-next-video-width="480" data-next-video-height="444" data-next-video-id="3120587"><source src="https://d1wst0behutosd.cloudfront.net/videos/1996414.mp4?Expires=1436348021&amp;Signature=H4ehwa2b0jQU30Qq4BsRGNgJy2HH2puykiKqt8eW-pNv9t312jOXydM7szNKE-j9J8u6Fno-9u2LP7-Y8eEl27mxmDI6IDu4se66LKz3uamPa8sAvpgDJPepMM24b~QbU3io1cQ2PTF86rCRkVzT1O9uhgJRB2B4U5Cfkz0LVA~77v71fS3H6bCAVBhYvJdBKtm5xhLAcouW8YDN7rHQMcb3CSGRkQN~REeSfoK9aVsDnJZtOcvlNF-357t4ceEgWDd~ZoCOA1N~sSN1K5IkvcPgXyogydKdgcy9k~214LlAzd-fBp~H9UOtJqrCLDPUe3UW1BzcYWd4pVRorr5Jlw__&amp;Key-Pair-Id=APKAJJ6WELAPEP47UKWQ" type="video/mp4" data-res="480p" data-default="true"></source></video>            </div>
+            <%=videojs_rails sources: { mp4: @startup.video.url, 
+   webm: @startup.video.url}, setup: "{}", controls: true,   width:"100%",height:"auto", id: "startup_video", class: "video-js vjs-default-skin vjs-big-play-centered" %>           </div>
 
             
     <div class="video_info">
