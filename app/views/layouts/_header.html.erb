@@ -109,7 +109,9 @@
           </li>
         <% end %>
         <li class="menu-upload">
-          <a class="menu-upload-button js-uploader-link rounded"><i class="fa fa-plus"></i> Startup</a>
+          <%= link_to new_startup_path, class: "menu-upload-button js-uploader-link rounded" do %>
+            <i class="fa fa-plus"></i> Startup
+          <% end %>
         </li>
       </ul>
     </div>

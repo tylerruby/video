@@ -14,6 +14,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'paperclip-av-transcoder'
 gem 'thin'
+gem 'videojs_rails'
 
 
 gem 'pg', group: :production

@@ -15,7 +15,13 @@
                 Instant video uploads. No account required.
             </div>
             <div class="uploadbutton_wrapper">
-            <%= link_to('Sign Up!', new_user_registration_path, class: "uploadbutton")  %>
+            <% if user_signed_in? %>
+                <%= link_to new_startup_path, class: "uploadbutton" do %>
+                    <i class="fa fa-plus"></i> Startup!
+                <% end %>
+            <% else %>
+                <%= link_to('Sign Up!', new_user_registration_path, class: "uploadbutton")  %>
+            <% end %>
             </div>
         </div>
     </div>

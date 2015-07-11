@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  root 'startups#index'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
-  root 'pages#home'
+  resources :startups
 
-  
+  get 'home' => 'pages#home'
   get 'user' => 'pages#user'
   get 'video' => 'pages#video'
   get 'settings' => 'pages#settings'
