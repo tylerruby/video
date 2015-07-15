@@ -2450,6 +2450,7 @@ define("hbs!views/delete-link", ["hbs", "handlebars"], function(e, t) {
         }
 
         function d(e, n) {
+
             var a, i = e.attr("data-type"),
                 o = e.attr("data-subtype"),
                 s = l(e);
@@ -2460,6 +2461,7 @@ define("hbs!views/delete-link", ["hbs", "handlebars"], function(e, t) {
                     _(), e.data("nextPageData", t), (t.page.total <= 0 || !t.videos || !t.videos.length) && e.data("eof", !0), n && n(!1, t, e)
                 },
                 error: function(t) {
+                    console.log("front....")
                     _(), e.data("nextPageData", !1), n && n(!0, t, e)
                 }
             })
@@ -2510,6 +2512,7 @@ define("hbs!views/delete-link", ["hbs", "handlebars"], function(e, t) {
         }
 
         function m(e) {
+            console.log("scrolling")
             var n = t(e.target),
                 a = 0 === window.navigator.platform.indexOf("iPad");
             if (n.hasClass("thumb_title_label"));
@@ -7875,7 +7878,10 @@ define("hbs!views/delete-link", ["hbs", "handlebars"], function(e, t) {
 
         function o() {
             var t = e(window).scrollTop();
-            t > 100 ? e(".header").addClass("opaque") : e(".header").removeClass("opaque")
+            if(e(".header").attr("id")!="opaque"){
+             t > 100 ? e(".header").addClass("opaque") : e(".header").removeClass("opaque")
+
+            }
         }
 
         function s() {
