@@ -52,9 +52,10 @@ The control icons are from a custom font. Each icon corresponds to a character
   /* Needed for IE6 */
   left: 0;
   top: 0;
+  display: none;
 }
 .vjs-default-skin .vjs-slider-handle:before {
-  content: "\e009";
+  /*content: "\e009";
   font-family: VideoJS;
   font-size: 1em;
   line-height: 1;
@@ -62,14 +63,14 @@ The control icons are from a custom font. Each icon corresponds to a character
   text-shadow: 0em 0em 1em #fff;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
   /* Rotate the square icon to make a diamond */
   /* transform */
-  -webkit-transform: rotate(-45deg);
+  /*-webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  transform: rotate(-45deg);*/
 }
 /* Control Bar
 --------------------------------------------------------------------------------
@@ -257,7 +258,8 @@ fonts to show/hide properly.
   /* assuming volume starts at 1.0 */
 
   width: 100%;
-  background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+  background: #00a0f0;
+  /*background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;*/
 }
 .vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
   width: 0.5em;
@@ -287,7 +289,7 @@ fonts to show/hide properly.
   left: 0;
   right: 0;
   width: auto;
-  font-size: 0.3em;
+  font-size: 0.9em;
   height: 1em;
   /* Set above the rest of the controls. */
   top: -1em;
@@ -340,8 +342,8 @@ fonts to show/hide properly.
     Also using a paralax effect to make the lines move backwards.
       The -50% left position makes that happen.
   */
-
-  background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+  background: #00a0f0;
+  /*background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;*/
 }
 .vjs-default-skin .vjs-load-progress {
   background: #646464 /* IE8- Fallback */;
@@ -416,9 +418,15 @@ fonts to show/hide properly.
 Positioning of the play button in the center or other corners can be done more
 easily in the skin designer. http://designer.videojs.com/
 */
+@media only screen and (max-device-width:480px){
+  .vjs-default-skin .vjs-big-play-button {
+  left: 40% !important;
+  top: 40% !important;
+}
+
 .vjs-default-skin .vjs-big-play-button {
-  left: 40%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   font-size: 3em;
   display: block;
   z-index: 2;

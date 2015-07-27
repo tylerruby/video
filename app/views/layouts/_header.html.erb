@@ -11,8 +11,8 @@
           <i class="fa fa-search"></i>
       </button>
       <a href="/" class="logo navbar-brand">
-          <img class="logo-black" alt="vidme" src="http://i.imgur.com/hROHOae.png" />
-          <img class="logo-white" alt="vidme" src="http://i.imgur.com/uJVMKJP.png" />
+          <img class="logo-black" alt="pitch" src="http://i.imgur.com/hROHOae.png" />
+          <img class="logo-white" alt="pitch" src="http://i.imgur.com/hROHOae.png" />
           <i class="fa fa-bars"></i>
       </a>
       <ul class="dropdown-menu pull-left">
@@ -76,17 +76,19 @@
       <ul class="menu nav navbar-nav">
         <% if user_signed_in? %>
           <li class="visible-phone hidden-desktop hidden-tablet">
-          <a href="https://vid.me/tylerruby">My videos</a>
+          <%= link_to('Your profile', user_path(current_user)) %>
         </li>
         <li class="visible-phone hidden-desktop hidden-tablet">
-          <a href="/settings">Settings</a>
+          <%= link_to('Settings', edit_user_registration_path) %>
         </li>
         <li class="visible-phone hidden-desktop hidden-tablet">
-            <a class="sign-out-link" href="/sign-out">Logout (tylerruby)</a>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "sign-out-link") %>
         </li>
         <li class="dropdown hidden-phone">
-          <a href="https://vid.me/tylerruby" class="avatar-link"><span class="notify-badge-anchor"><img src="https://d1wst0behutosd.cloudfront.net/avatars/4171496.square.jpg?v4r1436330556" alt="" class="header-avatar"><span class="label label-notifications hide"></span></span><span class="menu-username">tylerruby</span>
-          </a>
+
+          <%= link_to user_path(current_user), class: "avatar-link" do %>
+          <span class="notify-badge-anchor"><img src="https://d1wst0behutosd.cloudfront.net/avatars/4171496.square.jpg?v4r1436330556" alt="" class="header-avatar"><span class="label label-notifications hide"></span></span><span class="menu-username">tylerruby</span>
+          <% end %>
           <ul class="dropdown-menu pull-right">
  
             <li>

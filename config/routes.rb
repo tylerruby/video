@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'startups#index'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
+  resources :users, only: [:show]
   resources :startups
 
   get 'home' => 'pages#home'
